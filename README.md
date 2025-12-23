@@ -1,4 +1,4 @@
-# 🧩 Architecture Orientée Services (SOA)
+# 🔐 Workshop SOA — Sécurisation d’un Service Web RESTful
 
 **Module : Architecture Orientée Services (SOA)**  
 **Année Universitaire : 2025–2026**  
@@ -6,118 +6,60 @@
 
 ---
 
-## 📘 Présentation générale du module
+## 🎯 Objectifs du workshop
 
-Le module **Architecture Orientée Services (SOA)** vise à doter les étudiants des compétences nécessaires pour concevoir, développer et sécuriser des **applications distribuées modernes**, basées sur des services interopérables.
-
-Il couvre l’évolution du Web vers les **services web**, les paradigmes architecturaux associés, ainsi que les technologies majeures utilisées dans les architectures orientées services, telles que **SOAP**, **REST** et **GraphQL**.
-
-Le module adopte une approche **progressive et pratique**, combinant cours théoriques, ateliers techniques et workshops applicatifs.
-
----
-
-## 🎯 Objectifs pédagogiques du module
-
-À l’issue de ce module, l’étudiant sera capable de :
-
-- Comprendre les **fondements des architectures orientées services**
-- Concevoir et exposer des **services web** selon différents styles architecturaux
-- Comparer et choisir entre **SOAP, REST et GraphQL**
-- Sécuriser des services web à l’aide de mécanismes standards
-- Mettre en œuvre des **API interopérables et évolutives**
+- Comprendre les principes de **sécurisation des services web RESTful**
+- Mettre en œuvre une **authentification basée sur les jetons (Token / JWT)**
+- Gérer les **autorisations d’accès** aux ressources REST
+- Appliquer les bonnes pratiques de sécurité dans une architecture SOA
+- Sécuriser des services REST développés avec **JAX-RS**
 
 ---
 
-## 📚 Contenu du module
+## 📚 Pré-requis
 
-### 🔹 Cours
-
-### 📌 Cours 1 — Introduction aux Architectures orientées services
-➡️ [`Workshop-ProjectStudy`](https://github.com/badi3a/SOA-Training/tree/Workshop-ProjectStudy)
-
-- Analyse d’une application existante
-- Étude des limites architecturales
-- Proposition d’une refonte orientée services
+- Connaissances en **Java**
+- Bases des **services web REST**
+- Notions sur **HTTP** et les codes de réponse
+- Compréhension générale de l’architecture SOA
 
 ---
 
-### 📌 Cours 2— Découverte des services Web étendus: SOAP
-➡️ [`Workshop-SOAP`](https://github.com/badi3a/SOA-Training/tree/workshop-soap)
+## 🛠️ Outils à installer
 
-- Analyse du WSDL
-- Compréhension des messages SOAP
-- Consommation d’un service web via SoapUI
-
----
-
-### 📌 Cours 3— Services Web REST
-➡️ [`Workshop-REST`](https://github.com/badi3a/SOA-Training/tree/workshop-RestApi)
-
-- Conception de ressources REST
-- Implémentation des opérations CRUD
-- Tests des services REST
+- **JDK (Java Development Kit)**
+- **IntelliJ IDEA** (ou tout IDE Java équivalent)
+- **Apache Maven**
+- **Serveur d’applications** (Tomcat ou équivalent)
+- **Postman** (ou tout autre client REST)
+- Accès à un **outil de décodage JWT** (ex. jwt.io)
 
 ---
 
-### 📌 Cours —4 Sécurisation des Services REST
-➡️ [`Workshop-REST-Security`](https://github.com/badi3a/SOA-Training/tree/workshop-security)
+## 📂 Ressources
 
-- Authentification basée sur les jetons (JWT)
-- Autorisation d’accès aux ressources
-- Sécurisation des API REST avec JAX-RS
+- Énoncé officiel de l’atelier (PDF)
+- Projet REST CRUD réalisé dans les ateliers précédents
+- Supports du module SOA
 
----
-
-### 📌 Workshop 5— Mise en place d’une API GraphQL
-➡️ [`Workshop-GraphQL`](https://github.com/badi3a/SOA-Training/tree/workshop-graphQL)
-
-- Introduction à GraphQL
-- Conception du schéma GraphQL
-- Implémentation des queries et mutations
-- Comparaison avec REST
+📎 **Support du workshop** :  
+➡️ *Atelier 5 – Sécuriser un service web RESTful (JAX-RS)*
 
 ---
 
-## 📊 Acquis d’Apprentissage du Module (AAP)
+## 📦 Travail demandé
 
-Les ateliers et workshops du module permettent de couvrir les **AAP suivants** :
+Les étudiants doivent :
 
-- **AAP1** : Analyser une architecture logicielle existante
-- **AAP2** : Concevoir une architecture orientée services
-- **AAP3** : Développer et exposer des services web
-- **AAP4** : Consommer et intégrer des services web
-- **AAP5** : Sécuriser des services web
-- **AAP6** : Comparer et justifier le choix d’un style architectural
+- Intégrer un **mécanisme d’authentification par token**
+- Mettre en place la **sécurisation des ressources REST**
+- Gérer l’accès aux services à l’aide des **en-têtes HTTP**
+- Tester les scénarios d’accès autorisés et non autorisés
+- Vérifier le comportement du service en cas de jeton valide, invalide ou expiré
 
 ---
+---
 
-## 📂 Organisation du repository
-
-```text
-SOA-Training/
-│
-├── Workshop-1-ProjectStudy/
-├── Workshop-SOAP/
-├── Workshop-REST/
-├── Workshop-REST-Security/
-├── Workshop-GraphQL/
-│
-└── README.md
-```
 ## 🏫 Cadre pédagogique
-
-### Enseignante : [Badia Bouhdid](https://www.linkedin.com/in/badiabouhdid)
-
-
-Ce cours a été développé dans le cadre du **module Architecture Orientée Services (SOA)**,  
-en collaboration avec d’autres enseignants, à l’**[École d’Ingénieurs ESPRIT](https://www.esprit.tn)**.
-
-
-
-<p align="center">
-  <img src="https://www.esprit.tn/wp-content/uploads/2025/03/Entree-campus-scaled.jpg" alt="Entrée du campus ESPRIT" />
-  <br>
-  <em>École d’Ingénieurs ESPRIT – Campus</em>
-</p>
-
-
+### Enseignante:- **[Badia Bouhdid](https://www.linkedin.com/in/badiabouhdid)**
+Cet atelier est dispensé dans le cadre du **module Architecture Orientée Services (SOA)**  à l’[**École d’Ingénieurs ESPRIT**.](https://www.esprit.tn)

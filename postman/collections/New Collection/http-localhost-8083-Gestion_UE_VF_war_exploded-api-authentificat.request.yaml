@@ -1,0 +1,11 @@
+$kind: http-request
+name: http://localhost:8083/Gestion_UE_VF_war_exploded/api/authentification
+description: ""
+url: http://localhost:8083/Gestion_UE_VF_war_exploded/api/authentification
+method: POST
+body:
+  type: urlencoded
+  content:
+    user: test
+    pwd: "12345"
+order: 1000

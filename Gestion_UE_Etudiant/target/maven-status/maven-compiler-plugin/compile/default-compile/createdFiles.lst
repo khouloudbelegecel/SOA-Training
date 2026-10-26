@@ -1,0 +1,13 @@
+entities\Module$TypeModule.class
+webservices\HelloWS.class
+metiers\ModuleBusiness.class
+webservices\ModuleWS.class
+filtres\Secured.class
+webservices\AuthenticationEndPoint.class
+filtres\AuthenticationFilter.class
+metiers\UniteEnseignementBusiness.class
+Index.class
+entities\UniteEnseignement.class
+entities\Module.class
+webservices\UniteEnsWS.class
+entities\Credentials.class

@@ -1,0 +1,11 @@
+workspace:
+  id: c2496837-dd3f-4c80-8ff1-c471c5255cda
+localResources:
+  specs:
+    - ../C:/Users/khouloud belgacem/Documents/SOA-Training/GraphQL/target/classes/schema.graphql
+    - ../C:/Users/khouloud belgacem/Documents/SOA-Training/GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/WEB-INF/classes/schema.graphql
+    - ../C:/Users/khouloud belgacem/Documents/SOA-Training/GraphQL/src/main/resources/schema.graphql
+resourceNameMappings:
+  specs:
+    - ../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/WEB-INF/classes/schema.graphql: schema.graphql
+    - ../GraphQL/src/main/resources/schema.graphql: schema.graphql

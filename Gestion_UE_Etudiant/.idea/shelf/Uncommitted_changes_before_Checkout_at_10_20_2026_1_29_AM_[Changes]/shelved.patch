@@ -1,0 +1,117 @@
+Index: src/main/java/webservices/UniteEnsRestApi.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package webservices;\r\n\r\npublic class UniteEnsRestApi {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/webservices/UniteEnsRestApi.java b/src/main/java/webservices/UniteEnsRestApi.java
+--- a/src/main/java/webservices/UniteEnsRestApi.java	(revision be6c8ee52703e97da60f224a39e5be7ae4325717)
++++ b/src/main/java/webservices/UniteEnsRestApi.java	(date 1792455748508)
+@@ -1,4 +1,86 @@
+ package webservices;
+ 
++import entities.UniteEnseignement;
++import metiers.UniteEnseignementBusiness;
++
++import javax.ws.rs.*;
++import javax.ws.rs.core.MediaType;
++import javax.ws.rs.core.Response;
++
++@Path("/ue")
+ public class UniteEnsRestApi {
+-}
++
++    private static final UniteEnseignementBusiness helper = new UniteEnseignementBusiness();
++
++    @Path("/getListe")
++    @GET
++    @Produces(MediaType.APPLICATION_JSON)
++    public Response getListe() {
++        return Response.ok(helper.getListeUE()).build();
++    }
++
++    @Path("/getById/{id}")
++    @GET
++    @Produces(MediaType.APPLICATION_JSON)
++    public Response getById(@PathParam("id") int id) {
++        UniteEnseignement ue = helper.getUEByCode(id);
++        if (ue == null) {
++            return Response.status(Response.Status.NOT_FOUND)
++                    .entity("Aucune UE avec le code " + id).build();
++        }
++        return Response.ok(ue).build();
++    }
++
++    @Path("/getByDomaine/{domaine}")
++    @GET
++    @Produces(MediaType.APPLICATION_JSON)
++    public Response getByDomaine(@PathParam("domaine") String domaine) {
++        return Response.ok(helper.getUEByDomaine(domaine)).build();
++    }
++
++    @Path("/getBySemestre/{semestre}")
++    @GET
++    @Produces(MediaType.APPLICATION_JSON)
++    public Response getBySemestre(@PathParam("semestre") int semestre) {
++        return Response.ok(helper.getUEBySemestre(semestre)).build();
++    }
++
++    @Path("/addEns")
++    @POST
++    @Consumes(MediaType.APPLICATION_JSON)
++    @Produces(MediaType.APPLICATION_JSON)
++    public Response addUE(UniteEnseignement ue) {
++        if (ue == null) {
++            return Response.status(Response.Status.BAD_REQUEST)
++                    .entity("Corps JSON manquant ou invalide").build();
++        }
++        helper.addUniteEnseignement(ue);
++        return Response.status(Response.Status.CREATED).entity(ue).build();
++    }
++
++    @Path("/updateEns/{code}")
++    @PUT
++    @Consumes(MediaType.APPLICATION_JSON)
++    @Produces(MediaType.APPLICATION_JSON)
++    public Response updateUE(@PathParam("code") int code, UniteEnseignement ue) {
++        ue.setCode(code);
++        boolean updated = helper.updateUniteEnseignement(code, ue);
++        if (!updated) {
++            return Response.status(Response.Status.NOT_FOUND)
++                    .entity("Aucune UE avec le code " + code).build();
++        }
++        return Response.ok(ue).build();
++    }
++
++    @Path("/deleteEns/{id}")
++    @DELETE
++    public Response deleteUE(@PathParam("id") int id) {
++        boolean deleted = helper.deleteUniteEnseignement(id);
++        if (!deleted) {
++            return Response.status(Response.Status.NOT_FOUND)
++                    .entity("Aucune UE avec le code " + id).build();
++        }
++        return Response.noContent().build();
++    }
++
++}
+\ No newline at end of file
+Index: ../.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"\" vcs=\"Git\" />\r\n    <mapping directory=\"$PROJECT_DIR$/Gestion_UE_Etudiant\" vcs=\"Git\" />\r\n    <mapping directory=\"$PROJECT_DIR$/soa\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/vcs.xml b/../.idea/vcs.xml
+--- a/../.idea/vcs.xml	(revision be6c8ee52703e97da60f224a39e5be7ae4325717)
++++ b/../.idea/vcs.xml	(date 1792438595049)
+@@ -3,6 +3,5 @@
+   <component name="VcsDirectoryMappings">
+     <mapping directory="" vcs="Git" />
+     <mapping directory="$PROJECT_DIR$/Gestion_UE_Etudiant" vcs="Git" />
+-    <mapping directory="$PROJECT_DIR$/soa" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file

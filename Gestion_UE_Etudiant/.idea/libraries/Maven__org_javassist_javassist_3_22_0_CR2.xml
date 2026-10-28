@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.javassist:javassist:3.22.0-CR2" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.javassist" artifactId="javassist" version="3.22.0-CR2" baseVersion="3.22.0-CR2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.glassfish.hk2:hk2-api:2.5.0-b42" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.glassfish.hk2" artifactId="hk2-api" version="2.5.0-b42" baseVersion="2.5.0-b42" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-api/2.5.0-b42/hk2-api-2.5.0-b42.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-api/2.5.0-b42/hk2-api-2.5.0-b42-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-api/2.5.0-b42/hk2-api-2.5.0-b42-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

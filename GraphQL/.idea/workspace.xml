@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cab4261-3146-4c5f-96e7-abbff3ca5fa2" name="Changes" comment="crud" />
+    <list default="true" id="dea68916-3b02-4041-965a-56a395e2053f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,12 +126,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Tomcat Server.Tomcat 9.0.96.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "workshop-security",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/khouloud belgacem/Documents/SOA-Training/GraphQL",
     "node.js.detected.package.eslint": "true",
@@ -261,7 +265,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9cab4261-3146-4c5f-96e7-abbff3ca5fa2" name="Changes" comment="" />
+      <changelist id="dea68916-3b02-4041-965a-56a395e2053f" name="Changes" comment="" />
       <created>1793053827876</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

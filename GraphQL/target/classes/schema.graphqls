@@ -1,0 +1,41 @@
+type UniteEnseignement {
+    code: Int!
+    domaine: String!
+    responsable: String!
+    credits: Int!
+    semestre: Int!
+}
+
+enum TypeModule {
+    TRANSVERSAL
+    PROFESSIONNEL
+    RECHERCHE
+}
+
+type Module {
+    matricule: String!
+    nom: String!
+    coefficient: Int!
+    volumeHoraire: Int!
+    type: TypeModule!
+    uniteEnseignement: UniteEnseignement
+}
+
+type Query {
+    getallmodules: [Module!]!
+    getmodulebymatricule(matricule: String!): Module
+    getmodulesbytype(type: TypeModule!): [Module!]!
+}
+
+type Mutation {
+    addmodule(matricule: String!, nom: String!, coefficient: Int!, volumeHoraire: Int!,
+              type: TypeModule!, codeUE: Int!): Module
+    updatemodule(matricule: String!, nom: String!, coefficient: Int!, volumeHoraire: Int!,
+                 type: TypeModule!, codeUE: Int!): Module
+    deletemodule(matricule: String!): Boolean!
+}
+
+schema {
+    query: Query
+    mutation: Mutation
+}

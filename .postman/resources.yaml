@@ -9,3 +9,4 @@ resourceNameMappings:
   specs:
     - ../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/WEB-INF/classes/schema.graphql: schema.graphql
     - ../GraphQL/src/main/resources/schema.graphql: schema.graphql
+    - ../GraphQL/target/classes/schema.graphql: schema.graphql

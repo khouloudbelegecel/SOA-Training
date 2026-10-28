@@ -1,0 +1,9 @@
+Index: ../GraphQL/.idea/.name
+===================================================================
+diff --git a/../GraphQL/.idea/.name b/../GraphQL/.idea/.name
+deleted file mode 100644
+--- a/../GraphQL/.idea/.name	(revision e4c9837126394aa68f0cc2a36819c2e7a7278341)
++++ /dev/null	(revision e4c9837126394aa68f0cc2a36819c2e7a7278341)
+@@ -1,1 +0,0 @@
+-schema.graphql
+\ No newline at end of file

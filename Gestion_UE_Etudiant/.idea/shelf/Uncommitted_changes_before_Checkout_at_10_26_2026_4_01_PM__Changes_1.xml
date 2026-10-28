@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_10_26_2026_4_01_PM_[Changes]1" date="1793026878745" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_26_2026_4_01_PM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 10/26/2026 4:01 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="../GraphQL/target/classes/graphql/QueryResolver.class" />
+    <option name="AFTER_PATH" value="../GraphQL/target/classes/graphql/QueryResolver.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_26_2026_4_01_PM_[Changes]1/QueryResolver.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/WEB-INF/classes/graphql/MutationResolver.class" />
+    <option name="AFTER_PATH" value="../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/WEB-INF/classes/graphql/MutationResolver.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_26_2026_4_01_PM_[Changes]1/MutationResolver.class" />
+  </binary>
+</changelist>

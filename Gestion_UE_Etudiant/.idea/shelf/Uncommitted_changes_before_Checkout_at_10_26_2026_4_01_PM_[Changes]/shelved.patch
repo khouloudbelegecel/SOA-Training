@@ -1,0 +1,16 @@
+Index: ../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Manifest-Version: 1.0\r\nCreated-By: IntelliJ IDEA\r\nBuilt-By: hp\r\nBuild-Jdk: Amazon Corretto 17.0.13\r\n\r\n
+===================================================================
+diff --git a/../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF b/../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF
+--- a/../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF	(revision e4c9837126394aa68f0cc2a36819c2e7a7278341)
++++ b/../GraphQL/target/GraphQlLogement-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF	(date 1793026339579)
+@@ -1,5 +1,5 @@
+ Manifest-Version: 1.0
+ Created-By: IntelliJ IDEA
+-Built-By: hp
+-Build-Jdk: Amazon Corretto 17.0.13
++Built-By: khouloud belgacem
++Build-Jdk: Microsoft OpenJDK 17.0.20
+ 
